@@ -89,3 +89,26 @@ puts full_name.split
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
+
+# array is assigned as the given set of integers [0,1,2,3,4]
+# .combination method is called with the given parameter length set to 3
+# combination is set as "element" in our pipes ||
+# p combination after || to puts the combination out with indents
+# Return will give out a combination length set to 3 integers based on given array assignment
+# ORDER OF COMBINATIONS IS INDETERMINATE
+=begin
+Return given
+[0, 1, 2]
+[0, 1, 3]
+[0, 1, 4]
+[0, 2, 3]
+[0, 2, 4]
+[0, 3, 4]
+[1, 2, 3]
+[1, 2, 4]
+[1, 3, 4]
+[2, 3, 4]
+=end 
+a = [0, 1, 2, 3, 4]
+
+a.combination (3) {|combination| p combination }
