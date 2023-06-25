@@ -112,3 +112,17 @@ Return given
 a = [0, 1, 2, 3, 4]
 
 a.combination (3) {|combination| p combination }
+
+# There are many ways to use the .any? method. I will be going over 1 set of rules to the method below.
+# array is assigned as set of values [0,1,2,3]
+# .any? method is called upon the array and will retun true based on criterion given in our block of code {}
+# Iterating if any of the elements given in our assigned array are > than 2
+# Return True
+
+a = [0, 1, 2, 3]
+
+a.any? {|element| element > 2 }
+
+# Iterating if any of the elements given in our assigned array are > than 3
+# Return FALSE as we have no elements > than 3 in our assigned array
+a.any? {|element| element > 3 }
