@@ -5,7 +5,11 @@
 
 
 # 1: Write a method named greeting that returns a string with a general greeting. 
+def greeting (name)
+    return "Hows it been, #{name}?"
+end
 
+puts greeting("Jim")
 # What is the return value of your method?
 # How many arguments did you pass your method?
 
