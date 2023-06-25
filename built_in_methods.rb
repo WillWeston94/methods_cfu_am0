@@ -63,7 +63,26 @@ puts full_name.split
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
 
+# 10 is given integer/self
+# to_f is the method for converting to "float" and will return a decimal float number
+# return is 10.0 
+10.to_f
 
+# 10.78457 is the given float number we want to round
+# 1 is the passed parameter that is known as "ndigits"
+# Once passed we are calculating that we want the float to be rounded to the first decimal place holder...in this case ".7"
+# return would be 10.8 as we are rounding up since .round is built in as a round up strategy. 
+
+10.78457.round(1)
+
+# for more clarification .round is taking the ndigit parameter of (3) and rounding the given float to the 3rd decimal place.
+# return is 10.785 rounding up the ".78457" to ".785"
+10.78457.round(3)
+
+# We can also round down but the negative parameters become a little bit more tricky and we have to follow a stricter set of rules.
+# in this case we are rounding ".78457" to a whole number 
+# return is 10
+10.78457.round(-1)
 
 # SECTION 4: Calling methods on variables assigned to arrays.
 # Declare 2 variables assigned to arrays.
