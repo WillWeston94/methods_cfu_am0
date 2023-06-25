@@ -8,19 +8,24 @@
 # The return value is "hello world"
 "Hello World".downcase
 
-
+# Method .include? is seeing if the given string has the included  argument of "Hello" 
+#Return value is True because the string includes the word "Hello"
 "Hello World".include?("Hello")
 
-
+# Method .end_with? is seeing if the given string ends with the argument of "Hello" passed in the parenthesis.
+# Return is False because it does not end with the argument given.
 "Hello World".end_with?("Hello")
 
-
+# Method is running to see if the given string ends with argument "rld"
+# Return value is True because it does end with "rld"
 "Hello World".end_with?("rld")
 
-
+# Method is running to check if integer given is even. No arguments are passed
+# Return = True
 12.even?
 
-
+# Method runs integer object to check what the "next" integer is. No arguments passed.
+# Return = 19
 18.next
 
 
