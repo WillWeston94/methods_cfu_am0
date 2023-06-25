@@ -44,7 +44,18 @@
 first_name = "Jeff"
 puts first_name.start_with?("J")
 
+# .replace method is called on last_name variable, storing string object "West"
+# Replace method has "Weston" passed as an argument which then replaces the original string object stored.
+# Return is "Weston"
+last_name = "West"
+puts last_name.replace ("Weston")
 
+# .split method is called on full_name variable, storing string object "William Weston"
+#.split method has no stored arguments are simply splits the string object and returns the following below including the indent.
+# William 
+# Weston 
+full_name = "William Weston"
+puts full_name.split
 
 # SECTION 3: Calling methods on variables assigned to integers.
 # Declare 2 variables assigned to integer objects.
