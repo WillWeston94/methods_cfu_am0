@@ -87,17 +87,17 @@ check_stock(0, "Cheese");
 check_stock(1, "Salsa");
 # => "Salsa - running LOW"
 
-def check_stock (num_1, name_1)
-    if num_1 >= 4 
-        puts "#{name_1} - stocked"
-    elsif num_1 < 4
-        puts "#{name_1} - running LOW"
-    else num_1 = 0
-        puts "#{name_1} - OUT of stock!"
+def check_stock (quantity, item)
+    if quantity >= 4 
+        puts "#{item} - is stocked"
+    elsif quantity < 4
+        puts "#{item} - running LOW"
+    else quantity = 0
+        puts "#{item} - OUT of stock!"
     end
 end
 
-num_1 = 4
-name_1 = "Coffee"
-
-p check_stock(num_1, name_1)
+puts check_stock(4, "Coffee")
+puts check_stock(3, "Tortillas")
+puts check_stock(0, "Cheese")
+puts check_stock(1, "Salsa")
