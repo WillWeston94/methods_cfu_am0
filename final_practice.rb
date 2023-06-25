@@ -55,10 +55,22 @@ puts greet_person("John", "J", "West")
 # 4: Write a method named square that takes in one integer, and returns the square of that integer.
 # Bonus: Print a sentence that interpolates the return value of your square method.
 
-# What is the return value of your method?
-# How many arguments did you pass your method?
-# What data type was your argument(s)?
+def square (num)
+    square = num * num
+end
 
+num = 8
+result = square(num)
+
+p "The square of #{num} is #{result}"
+
+# What is the return value of your method?
+# Implicit
+
+# How many arguments did you pass your method?
+# 1 argument = "num"
+# What data type was your argument(s)?
+# Integer 
 
 # 5: Write a method named check_stock that satisfies the following interaction pattern:
 # Hint: You will only write one check_stock method that checks the quantity and then prints the corresponding statement.
@@ -74,3 +86,18 @@ check_stock(0, "Cheese");
 
 check_stock(1, "Salsa");
 # => "Salsa - running LOW"
+
+def check_stock (num_1, name_1)
+    if num_1 >= 4 
+        puts "#{name_1} - stocked"
+    elsif num_1 < 4
+        puts "#{name_1} - running LOW"
+    else num_1 = 0
+        puts "#{name_1} - OUT of stock!"
+    end
+end
+
+num_1 = 4
+name_1 = "Coffee"
+
+p check_stock(num_1, name_1)
