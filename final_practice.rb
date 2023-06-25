@@ -5,27 +5,51 @@
 
 
 # 1: Write a method named greeting that returns a string with a general greeting. 
-def greeting (name)
-    return "Hows it been, #{name}?"
+def greeting 
+    return "Whats up!"
 end
 
-puts greeting("Jim")
-# What is the return value of your method?
+puts greeting
+
+# What is the return value of your method? 
+# Return value is explicit since keyword return was stated
 # How many arguments did you pass your method?
+# No arguments were passed through the method
 
 
 # 2: Write a method named custom_greeting that returns a greeting WITH a specific name.
+def greeting (name)
+    "Hows it been, #{name}?"
+end
 
+puts greeting("Jim")
+
+puts greeting("Terry")
 # What is the return value of your method?
+# Return value is implicit as no return is present. Ruby automatically returns value of last expression.
 # How many arguments did you pass your method?
+# 1 Argument was passed into the method = "name"
 # What data type was your argument(s)?
+# data type was string
+
 
 
 # 3: Write a method named greet_person that takes in 3 strings, a first, middle, and last name, and returns a sentence with the full name.
+def greet_person(first_name, middle_name, last_name)
+    full_name = "#{first_name} #{middle_name} #{last_name}"
+    "Am I speaking to, #{full_name}?"
+end
+
+puts greet_person("John", "J", "West")
 
 # What is the return value of your method?
+# Implicit
+
 # How many arguments did you pass your method?
+# 3 arguments were passed in the method "first,middle,last names"
+
 # What data type was your argument(s)?
+# Data type == string
 
 
 # 4: Write a method named square that takes in one integer, and returns the square of that integer.
